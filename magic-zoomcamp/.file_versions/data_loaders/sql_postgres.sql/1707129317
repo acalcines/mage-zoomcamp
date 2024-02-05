@@ -1,0 +1,4 @@
+-- Docs: https://docs.mage.ai/guides/sql-blocks
+select distinct vendorid 
+from
+ny_taxigreen_taxi

@@ -1,0 +1,17 @@
+import pyarraw as pa
+import pyarraw.parquet as pq
+import os
+
+if 'data_exporter' not in globals():
+    from mage_ai.data_preparation.decorators import data_exporter
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/src/mystic-cable-406415-ea44d9f6c5ba.json'
+
+bucket_name = 'mage-zoomcamp-acalcines'
+project_id = 'mystic-cable-406415'
+
+@data_exporter
+def export_data(data, *args, **kwargs):
+    
+
+
